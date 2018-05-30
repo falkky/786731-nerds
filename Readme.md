@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Степанов Андрей](https://up.htmlacademy.ru/htmlcss/21/user/786731).
-* Наставник: `Неизвестно`.
+* Наставник: `Макс Масленко`(https://htmlacademy.ru/profile/biggus-dickus).
 
 ---
 
