@@ -24,27 +24,39 @@
     <main class="store">
       <h1>Магазин готовых шаблонов</h1>
       <aside class="filter">
-        <ul>
-          <li>
-            <h2>Стоимость:</h2>
-          </li>
-          <!--Здесь будет форма
-          <li>
-            <h2>Сетка:</h2>
-              <li>Адаптивкая</li>
-              <li>Фиксированная</li>
-              <li>Резиновая</li>
-          </li>
-          <li>
-            <h2>Особенности:</h2>
-              <li>Слайдер</li>
-              <li>Блок преимуществ</li>
-              <li>Новости</li>
-              <li>Галерея</li>
-              <li>Корзина</li>
-          </li>
-        -->
-        </ul>
+        <form action="https://echo.htmlacademy.ru">
+          <fieldset>
+            <legend>Стоимость:</legend>
+            <input type="range" name="price" min="0" max="15000">
+            <span>от</span>
+            <output name="price-min">0</output>
+            <span>до</span>
+            <output name="price-max">15000</output>
+          </fieldset>
+          <fieldset>
+            <legend>Сетка:</legend>
+            <input type="radio" name="layout" id="radio-adaptive" checked value="adaptive">
+            <label for="radio-adaptive">Адаптивная</label>
+            <input type="radio" name="layout" id="radio-fixed" value="fixed">
+            <label for="radio-fixed">Фиксированная</label>
+            <input type="radio" name="layout" id="radio-stretchy" value="stretchy">
+            <label for="radio-stretchy">Резиновая</label>
+          </fieldset>
+          <fieldset>
+            <legend>Особенности:</legend>
+            <input type="checkbox" name="slider" id="checkbox-slider" checked>
+            <label for="checkbox-slider">Слайдер</label>
+            <input type="checkbox" name="features" id="checkbox-features">
+            <label for="checkbox-features">Блок преимуществ</label>
+            <input type="checkbox" name="news" id="checkbox-news" checked>
+            <label for="checkbox-news">Новости</label>
+            <input type="checkbox" name="gallery" id="checkbox-gallery">
+            <label for="checkbox-gallery">Галерея</label>
+            <input type="checkbox" name="cart" id="checkbox-cart">
+            <label for="checkbox-cart">Корзина</label>
+          </fieldset>
+          <button type="submit" class="button-filter">показать</button>
+        </form>
       </aside>
       <section class="catalog">
         <h2>Сортировать:</h2>
@@ -110,8 +122,17 @@
         <b>nerds design studio</b>
         <p>191189, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         <p><a href="tel:+78122757575">тел. +7(812)275-75-75</a></p>
-        <button class="write-us">напишите нам</button>
-          <!--Здесь будет форма-->
+        <a href="" class="button-write-us">напишите нам</a>
+        <form action="https://echo.htmlacademy.ru">
+          <h2>Напишите нам</h2>
+          <label for="name-field">Ваше имя:</label>
+            <input class="text" name="name" id="name-field" placeholder="Имя Фамилия">
+          <label for="email-field">Ваш e-mail:</label>
+            <input type="text" name="email" id="email-field" placeholder="email@example.com">
+          <label for="text-field">Текст письма:</label>
+            <textarea name="text" placeholder="В свободной форме"></textarea>
+          <button type="submit" class="button-send">отправить</button>
+        </form>
       </section>
       <section class="socials">
         <ul>
