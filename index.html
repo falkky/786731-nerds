@@ -118,16 +118,23 @@
         <b>nerds design studio</b>
         <p>191189, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         <p><a href="tel:+78122757575">тел. +7(812)275-75-75</a></p>
-        <a href="" class="button-write-us">напишите нам</a>
-        <form action="https://echo.htmlacademy.ru">
+        <a href="#" class="button-write-us">напишите нам</a>
+        <form action="https://echo.htmlacademy.ru" method="post">
           <h2>Напишите нам</h2>
-          <label for="name-field">Ваше имя:</label>
-            <input class="text" name="name" id="name-field" placeholder="Имя Фамилия">
-          <label for="email-field">Ваш e-mail:</label>
-            <input type="text" name="email" id="email-field" placeholder="email@example.com">
-          <label for="text-field">Текст письма:</label>
-            <textarea name="text" placeholder="В свободной форме"></textarea>
+          <div class="name">
+            <label class="name-label" for="name-field">Ваше имя:</label>
+            <input type="text" class="name-input" name="name" id="name-field" placeholder="Имя Фамилия">
+          </div>
+          <div class="email">
+            <label class="email-label" for="email-field">Ваш e-mail:</label>
+            <input type="email" class="email-input" name="email" id="email-field" placeholder="email@example.com">
+          </div>
+          <div class="text">
+            <label class="text-label">Текст письма:</label>
+            <textarea class="text-field" name="text" placeholder="В свободной форме"></textarea>
+          </div>
           <button type="submit" class="button-send">отправить</button>
+          <button type="button" class="modal-close"><span class="visually-hidden">Закрыть</span></button>
         </form>
       </section>
       <section class="socials">

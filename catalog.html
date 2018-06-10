@@ -24,36 +24,36 @@
     <main class="store">
       <h1>Магазин готовых шаблонов</h1>
       <aside class="filter">
-        <form action="https://echo.htmlacademy.ru">
-          <fieldset>
-            <legend>Стоимость:</legend>
+        <form action="https://echo.htmlacademy.ru" method="get">
+          <fieldset class="price">
+            <legend class="name-list">Стоимость:</legend>
             <input type="range" name="price" min="0" max="15000">
             <span>от</span>
-            <output name="price-min">0</output>
+            <output class="output-min" name="price-min">0</output>
             <span>до</span>
-            <output name="price-max">15000</output>
+            <output class="output-max" name="price-max">15000</output>
           </fieldset>
-          <fieldset>
-            <legend>Сетка:</legend>
-            <input type="radio" name="layout" id="radio-adaptive" checked value="adaptive">
-            <label for="radio-adaptive">Адаптивная</label>
-            <input type="radio" name="layout" id="radio-fixed" value="fixed">
-            <label for="radio-fixed">Фиксированная</label>
-            <input type="radio" name="layout" id="radio-stretchy" value="stretchy">
-            <label for="radio-stretchy">Резиновая</label>
+          <fieldset class="layout">
+            <legend class="name-list">Сетка:</legend>
+            <input type="radio" class="radio-button" name="layout" id="radio-adaptive" checked value="adaptive">
+            <label for="radio-adaptive" class="radio-name">Адаптивная</label>
+            <input type="radio" class="radio-button" name="layout" id="radio-fixed" value="fixed">
+            <label for="radio-fixed" class="radio-name">Фиксированная</label>
+            <input type="radio" class="radio-button" name="layout" id="radio-fluid-layout" value="stretchy">
+            <label for="radio-fluid-layout" class="radio-name">Резиновая</label>
           </fieldset>
-          <fieldset>
-            <legend>Особенности:</legend>
-            <input type="checkbox" name="slider" id="checkbox-slider" checked>
-            <label for="checkbox-slider">Слайдер</label>
-            <input type="checkbox" name="features" id="checkbox-features">
-            <label for="checkbox-features">Блок преимуществ</label>
-            <input type="checkbox" name="news" id="checkbox-news" checked>
-            <label for="checkbox-news">Новости</label>
-            <input type="checkbox" name="gallery" id="checkbox-gallery">
-            <label for="checkbox-gallery">Галерея</label>
-            <input type="checkbox" name="cart" id="checkbox-cart">
-            <label for="checkbox-cart">Корзина</label>
+          <fieldset class="features">
+            <legend class="name-list">Особенности:</legend>
+            <input type="checkbox" class="checkbox-button" name="slider" id="checkbox-slider" checked>
+            <label for="checkbox-slider" class="checkbox-name">Слайдер</label>
+            <input type="checkbox" class="checkbox-button" name="features" id="checkbox-features">
+            <label for="checkbox-features" class="checkbox-name">Блок преимуществ</label>
+            <input type="checkbox" class="checkbox-button" name="news" id="checkbox-news" checked>
+            <label for="checkbox-news" class="checkbox-name">Новости</label>
+            <input type="checkbox" class="checkbox-button" name="gallery" id="checkbox-gallery">
+            <label for="checkbox-gallery" class="checkbox-name">Галерея</label>
+            <input type="checkbox" class="checkbox-button" name="cart" id="checkbox-cart">
+            <label for="checkbox-cart" class="checkbox-name">Корзина</label>
           </fieldset>
           <button type="submit" class="button-filter">показать</button>
         </form>
@@ -122,16 +122,23 @@
         <b>nerds design studio</b>
         <p>191189, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         <p><a href="tel:+78122757575">тел. +7(812)275-75-75</a></p>
-        <a href="" class="button-write-us">напишите нам</a>
-        <form action="https://echo.htmlacademy.ru">
+        <a href="#" class="button-write-us">напишите нам</a>
+        <form action="https://echo.htmlacademy.ru" method="post">
           <h2>Напишите нам</h2>
-          <label for="name-field">Ваше имя:</label>
-            <input class="text" name="name" id="name-field" placeholder="Имя Фамилия">
-          <label for="email-field">Ваш e-mail:</label>
-            <input type="text" name="email" id="email-field" placeholder="email@example.com">
-          <label for="text-field">Текст письма:</label>
-            <textarea name="text" placeholder="В свободной форме"></textarea>
+          <div class="name">
+            <label class="name-label" for="name-field">Ваше имя:</label>
+            <input type="text" class="name-input" name="name" id="name-field" placeholder="Имя Фамилия">
+          </div>
+          <div class="email">
+            <label class="email-label" for="email-field">Ваш e-mail:</label>
+            <input type="email" class="email-input" name="email" id="email-field" placeholder="email@example.com">
+          </div>
+          <div class="text">
+            <label class="text-label">Текст письма:</label>
+            <textarea class="text-field" name="text" placeholder="В свободной форме"></textarea>
+          </div>
           <button type="submit" class="button-send">отправить</button>
+          <button type="button" class="modal-close"><span class="visually-hidden">Закрыть</span></button>
         </form>
       </section>
       <section class="socials">
