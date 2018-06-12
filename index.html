@@ -3,13 +3,16 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
       <a class="header-logo">
         <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип">
       </a>
-      <h1 class="visualy-hidden">Дизайн-студия nerds</h1>
+      <h1 class="visually-hidden">Дизайн-студия nerds</h1>
       <nav class="main-navigation">
         <ul>
           <li><a href="#">студия</a></li>
@@ -27,18 +30,18 @@
         <ul class="features-list">
           <li class="feature-first">
             <h2>Долго, дорого, скрупулезно.</h2>
-              <p>Математически выверенный дизайн<br>для вашего сайта или мобильного приложения.</p>
-              <a href="#" class="button">узнать больше</a>
+            <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+            <a href="#" class="button">узнать больше</a>
           </li>
           <li class="feature-second">
             <h2>Любим математику как никто другой</h2>
-              <p>Никакого креатива, только математические формулы<br>для расчета идеальных пропорций.</p>
-              <a href="" class="button">узнать больше</a>
+            <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+            <a href="#" class="button">узнать больше</a>
           </li>
           <li class="feature-third">
             <h2>Только ночь, только хардкор</h2>
-              <p>Работать днем, как все? Мы против этого<br>Ближе к полуночи работа только начинается.</p>
-              <a href="" class="button">узнать больше</a>
+            <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+            <a href="#" class="button">узнать больше</a>
           </li>
         </ul>
       </header>
@@ -47,17 +50,17 @@
           <li class="product-web">
             <h3>веб-сайты</h3>
             <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-            <a href="#" class="button">заказать</a>
+            <a href="#" class="button web">заказать</a>
           </li>
           <li class="product-apps">
             <h3>приложения</h3>
             <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-            <a href="#" class="button">заказать</a>
+            <a href="#" class="button apps">заказать</a>
           </li>
           <li class="product-presentation">
             <h3>презентации</h3>
             <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-            <a href="#" class="button">заказать</a>
+            <a href="#" class="button presentation">заказать</a>
           </li>
         </ul>
       </section>
@@ -76,9 +79,9 @@
         <table class="statistics">
           <caption>с 2004 года любим точность во всем:</caption>
           <tr>
-            <td>146%</td>
-            <td>100%<td>
-            <td>50%<td>
+            <td>146<span><sup>%</sup></span></td>
+            <td>100<span><sup>%</sup></span><td>
+            <td>50<span><sup>%</sup></span><td>
           </tr>
           <tr>
             <td>Уровень самоотдачи</td>
@@ -114,28 +117,11 @@
     </main>
     <footer class="main-footer">
       <section class="contacts">
-        <a href="#"></a>
-        <b>nerds design studio</b>
+        <img src="img/map.png" width="1440" height="416" alt="map">
+        <h3>nerds design studio</h3>
         <p>191189, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         <p><a href="tel:+78122757575">тел. +7(812)275-75-75</a></p>
         <a href="#" class="button-write-us">напишите нам</a>
-        <form action="https://echo.htmlacademy.ru" method="post">
-          <h2>Напишите нам</h2>
-          <div class="name">
-            <label class="name-label" for="name-field">Ваше имя:</label>
-            <input type="text" class="name-input" name="name" id="name-field" placeholder="Имя Фамилия">
-          </div>
-          <div class="email">
-            <label class="email-label" for="email-field">Ваш e-mail:</label>
-            <input type="email" class="email-input" name="email" id="email-field" placeholder="email@example.com">
-          </div>
-          <div class="text">
-            <label class="text-label">Текст письма:</label>
-            <textarea class="text-field" name="text" placeholder="В свободной форме"></textarea>
-          </div>
-          <button type="submit" class="button-send">отправить</button>
-          <button type="button" class="modal-close"><span class="visually-hidden">Закрыть</span></button>
-        </form>
       </section>
       <section class="socials">
         <ul>
@@ -147,5 +133,22 @@
         <p>Скидка 10% для друзей из социальных сетей.</p>
       </section>
     </footer>
+    <form class="modal-window" action="https://echo.htmlacademy.ru" method="post">
+      <h2>Напишите нам</h2>
+      <div class="name">
+        <label class="name-field" for="name-field">Ваше имя:</label>
+        <input type="text" class="name-input" name="name" id="name-field" placeholder="Имя Фамилия">
+      </div>
+      <div class="email">
+        <label class="name-field" for="email-field">Ваш e-mail:</label>
+        <input type="email" class="email-input" name="email" id="email-field" placeholder="email@example.com">
+      </div>
+      <div class="text">
+        <label class="name-field">Текст письма:</label>
+        <textarea class="text-field" name="text" placeholder="В свободной форме"></textarea>
+      </div>
+      <button type="submit" class="button-send">отправить</button>
+      <button type="button" class="modal-close"><span class="visually-hidden">Закрыть</span></button>
+    </form>
   </body>
 </html>

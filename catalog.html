@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -25,7 +28,7 @@
       <h1>Магазин готовых шаблонов</h1>
       <aside class="filter">
         <form action="https://echo.htmlacademy.ru" method="get">
-          <fieldset class="price">
+          <fieldset class="filter-list">
             <legend class="name-list">Стоимость:</legend>
             <input type="range" name="price" min="0" max="15000">
             <span>от</span>
@@ -33,16 +36,16 @@
             <span>до</span>
             <output class="output-max" name="price-max">15000</output>
           </fieldset>
-          <fieldset class="layout">
+          <fieldset class="filter-list">
             <legend class="name-list">Сетка:</legend>
             <input type="radio" class="radio-button" name="layout" id="radio-adaptive" checked value="adaptive">
             <label for="radio-adaptive" class="radio-name">Адаптивная</label>
             <input type="radio" class="radio-button" name="layout" id="radio-fixed" value="fixed">
             <label for="radio-fixed" class="radio-name">Фиксированная</label>
-            <input type="radio" class="radio-button" name="layout" id="radio-fluid-layout" value="stretchy">
+            <input type="radio" class="radio-button" name="layout" id="radio-fluid-layout" value="fluid">
             <label for="radio-fluid-layout" class="radio-name">Резиновая</label>
           </fieldset>
-          <fieldset class="features">
+          <fieldset class="filter-list">
             <legend class="name-list">Особенности:</legend>
             <input type="checkbox" class="checkbox-button" name="slider" id="checkbox-slider" checked>
             <label for="checkbox-slider" class="checkbox-name">Слайдер</label>
@@ -60,50 +63,50 @@
       </aside>
       <section class="catalog">
         <h2>Сортировать:</h2>
-          <ul>
-            <li><a href="#">по цене</a></li>
-            <li><a href="#">по типу</a></li>
-            <li><a href="#">по названию</a></li>
-            <li><a href="#">По возрастанию</a></li>
-            <li><a href="#">По убыванию</a></li>
-          </ul>
-        <div class="product-list">
+        <ul>
+          <li class="sort"><a href="#">по цене</a></li>
+          <li class="sort"><a href="#">по типу</a></li>
+          <li class="sort"><a href="#">по названию</a></li>
+          <li class="sort"><a href="#">По возрастанию</a></li>
+          <li class="sort"><a href="#">По убыванию</a></li>
+        </ul>
+        <div class="service-list">
           <ul>
             <li>
               <a href="#"><img src="img/img-sedona.jpg" width="360" height="576" alt="sedona"></a>
-              <h3><a href="#">sedona</a></h3>
+              <h3><a class="service-item" href="#">sedona</a></h3>
               <p>Информационный сайт для туристов</p>
-              <a href="#" class="product-button">9 900 РУБ.</a>
+              <a href="#" class="service-button">9 900 РУБ.</a>
             </li>
             <li>
               <a href="#"><img src="img/img-pink.jpg" width="360" height="576" alt="pink"></a>
-              <h3><a href="#">pink app</a></h3>
+              <h3><a class="service-item" href="#">pink app</a></h3>
               <p>Продуктовый лендинг приложения для iOS и Android</p>
-              <a href="#" class="product-button">9 900 РУБ.</a>
+              <a href="#" class="service-button">9 900 РУБ.</a>
             </li>
             <li>
               <a href="#"><img src="img/img-barbershop.jpg" width="360" height="576" alt="borodinski"></a>
-              <h3><a href="#">barbershop</a></h3>
+              <h3><a class="service-item" href="#">barbershop</a></h3>
               <p>Сайт салона красоты, Для мужчин, да.</p>
-              <a href="#" class="product-button">9&thinsp;900 руб.</a>
+              <a href="#" class="service-button">9&thinsp;900 руб.</a>
             </li>
             <li>
               <a href="#"><img src="img/img-mishka.jpg" width="360" height="576" alt="mishka"></a>
-              <h3><a href="#">mishka</a></h3>
+              <h3><a class="service-item" href="#">mishka</a></h3>
               <p>Интернет-магазин вязанных игрушек</p>
-              <a href="#" class="product-button">9&thinsp;900 руб.</a>
+              <a href="#" class="service-button">9&thinsp;900 руб.</a>
             </li>
             <li>
               <a href="#"><img src="img/img-aplus.jpg" width="360" height="576" alt="a+"></a>
-              <h3><a href="#">a plus</a></h3>
+              <h3><a class="service-item" href="#">a plus</a></h3>
               <p>Лендинг курсов повышения квалификации</p>
-              <a href="#" class="product-button">9&thinsp;900 руб.</a>
+              <a href="#" class="service-button">9&thinsp;900 руб.</a>
             </li>
             <li>
               <a href="#"><img src="img/img-kvast.jpg" width="360" height="576" alt="kvast"></a>
-              <h3><a href="#">кваст</a></h3>
+              <h3><a class="service-item" href="#">кваст</a></h3>
               <p>Промо-сайт производителя крафтового кваса</p>
-              <a href="#" class="product-button">9&thinsp;900 руб.</a>
+              <a href="#" class="service-button">9&thinsp;900 руб.</a>
             </li>
           </ul>
         </div>
@@ -119,27 +122,11 @@
     </main>
     <footer class="main-footer">
       <section class="contacts">
-        <b>nerds design studio</b>
+        <img src="img/map.png" width="1440" height="416" alt="map">
+        <h3>nerds design studio</h3>
         <p>191189, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         <p><a href="tel:+78122757575">тел. +7(812)275-75-75</a></p>
         <a href="#" class="button-write-us">напишите нам</a>
-        <form action="https://echo.htmlacademy.ru" method="post">
-          <h2>Напишите нам</h2>
-          <div class="name">
-            <label class="name-label" for="name-field">Ваше имя:</label>
-            <input type="text" class="name-input" name="name" id="name-field" placeholder="Имя Фамилия">
-          </div>
-          <div class="email">
-            <label class="email-label" for="email-field">Ваш e-mail:</label>
-            <input type="email" class="email-input" name="email" id="email-field" placeholder="email@example.com">
-          </div>
-          <div class="text">
-            <label class="text-label">Текст письма:</label>
-            <textarea class="text-field" name="text" placeholder="В свободной форме"></textarea>
-          </div>
-          <button type="submit" class="button-send">отправить</button>
-          <button type="button" class="modal-close"><span class="visually-hidden">Закрыть</span></button>
-        </form>
       </section>
       <section class="socials">
         <ul>
@@ -151,5 +138,22 @@
         <p>Скидка 10% для друзей из социальных сетей.</p>
       </section>
     </footer>
+    <form class="modal-window" action="https://echo.htmlacademy.ru" method="post">
+      <h2>Напишите нам</h2>
+      <div class="name">
+        <label class="name-field" for="name-field">Ваше имя:</label>
+        <input type="text" class="name-input" name="name" id="name-field" placeholder="Имя Фамилия">
+      </div>
+      <div class="email">
+        <label class="name-field" for="email-field">Ваш e-mail:</label>
+        <input type="email" class="email-input" name="email" id="email-field" placeholder="email@example.com">
+      </div>
+      <div class="text">
+        <label class="name-field">Текст письма:</label>
+        <textarea class="text-field" name="text" placeholder="В свободной форме"></textarea>
+      </div>
+      <button type="submit" class="button-send">отправить</button>
+      <button type="button" class="modal-close"><span class="visually-hidden">Закрыть</span></button>
+    </form>
   </body>
 </html>
