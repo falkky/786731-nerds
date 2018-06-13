@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -14,7 +14,7 @@
       </a>
       <h1 class="visually-hidden">Дизайн-студия nerds</h1>
       <nav class="main-navigation">
-        <ul>
+        <ul class="reset-list">
           <li><a href="#">студия</a></li>
           <li><a href="#">клиенты</a></li>
           <li><a href="catalog.html">магазин</a></li>
@@ -27,7 +27,7 @@
     </header>
     <main class="container">
       <header class="features">
-        <ul class="features-list">
+        <ul class="features-list reset-list">
           <li class="feature-first">
             <h2>Долго, дорого, скрупулезно.</h2>
             <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
@@ -46,7 +46,7 @@
         </ul>
       </header>
       <section class="products">
-        <ul class="products-list">
+        <ul class="products-list reset-list">
           <li class="product-web">
             <h3>веб-сайты</h3>
             <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
@@ -68,7 +68,7 @@
         <b>Мы&nbsp;&mdash; маленькая, но гордая дизайн-студия из Краснодара.</b>
         <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
         <p>выполняем заказы на разработку:</p>
-        <ul>
+        <ul class="reset-list">
           <li>Веб-сайтов любой сложности</li>
           <li>Мобильный приложений для iOS и Android</li>
           <li>Слайдшоу и видео для корпоративных презентаций</li>
@@ -91,7 +91,7 @@
         </table>
       </aside>
       <footer class="partners">
-        <ul>
+        <ul class="reset-list">
           <li>
             <a href="https://htmlacademy.ru/intensive/htmlcss">
               <img src="img/logo-htmlacademy.png" width="199" height="68" alt="htmlacademy">
@@ -117,14 +117,14 @@
     </main>
     <footer class="main-footer">
       <section class="contacts">
-        <img src="img/map.png" width="1440" height="416" alt="map">
+        <img src="img/map.jpg" width="1440" height="416" alt="map">
         <h3>nerds design studio</h3>
         <p>191189, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         <p><a href="tel:+78122757575">тел. +7(812)275-75-75</a></p>
         <a href="#" class="button-write-us">напишите нам</a>
       </section>
       <section class="socials">
-        <ul>
+        <ul class="reset-list">
           <li><a class="social-buttom" href="#">Вконтакте</a></li>
           <li><a class="social-buttom" href="#">Фейсбук</a></li>
           <li><a class="social-buttom" href="#">Инстаграм</a></li>
@@ -137,15 +137,15 @@
       <h2>Напишите нам</h2>
       <div class="name">
         <label class="name-field" for="name-field">Ваше имя:</label>
-        <input type="text" class="name-input" name="name" id="name-field" placeholder="Имя Фамилия">
+        <input type="text" class="field-input" name="name" id="name-field" placeholder="Имя Фамилия">
       </div>
       <div class="email">
         <label class="name-field" for="email-field">Ваш e-mail:</label>
-        <input type="email" class="email-input" name="email" id="email-field" placeholder="email@example.com">
+        <input type="email" class="field-input" name="email" id="email-field" placeholder="email@example.com">
       </div>
       <div class="text">
-        <label class="name-field">Текст письма:</label>
-        <textarea class="text-field" name="text" placeholder="В свободной форме"></textarea>
+        <label class="name-field" for="text-field">Текст письма:</label>
+        <textarea class="field-input" name="text" id="text-field" placeholder="В свободной форме"></textarea>
       </div>
       <button type="submit" class="button-send">отправить</button>
       <button type="button" class="modal-close"><span class="visually-hidden">Закрыть</span></button>

@@ -2,15 +2,19 @@ body {
   margin: 0;
   padding: 0;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.50;
   font-family: "Roboto", Arial, sans-serif;
   color: #283136;
-  background-color: #ffffff;
-  font-weight: 400;
 }
 
 a {
   text-decoration: none;
+}
+
+.reset-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
 .main-header,
@@ -19,16 +23,10 @@ a {
 }
 
 .main-navigation {
-  line-height: 30px;
+  line-height: 1.88;
   font-weight: 500;
   color: #191919;
   text-transform: uppercase;
-}
-
-.main-navigation li,
-.features li,
-.products li {
-  list-style: none;
 }
 
 .main-navigation a:hover {
@@ -41,13 +39,13 @@ a {
 
 .features-list h2 {
   font-size: 55px;
-  line-height: 55px;
+  line-height: 1;
   font-weight: 500;
   color: #000000;
 }
 
 .features-list .button {
-  line-height: 18px;
+  line-height: 1.13;
   color: #ffffff;
   background-color: #fb565a;
 }
@@ -79,7 +77,7 @@ a {
 
 .products-list h3 {
   font-size: 24px;
-  line-height: 30px;
+  line-height: 1.25;
   font-weight: 700;
   color: #000000;
   text-transform: uppercase;
@@ -147,7 +145,7 @@ a {
 .info b,
 .modal-window h2 {
   font-size: 45px;
-  line-height: 45px;
+  line-height: 1;
   font-weight: 500;
   color: #000000;
 }
@@ -161,13 +159,13 @@ a {
 
 .statistics tr:first-of-type {
   font-size: 45px;
-  line-height: 10.06px;
+  line-height: 0.23;
   color: #000000;
   font-weight: 700;
 }
 
 .statistics tr:last-of-type {
-  line-height: 18px;
+  line-height: 1.13;
 }
 
 .contacts {
@@ -176,13 +174,13 @@ a {
 
 .contacts h3 {
   font-size: 18x;
-  line-height: 30px;
+  line-height: 1.67;
   color: #000000;
   font-weight: 700;
 }
 
 .button-write-us {
-  line-height: 18px;
+  line-height: 1.13;
   font-weight: 500;
   color: #ffffff;
   text-transform: uppercase;
@@ -190,22 +188,20 @@ a {
 }
 
 .name-field {
-  line-height: 18px;
+  line-height: 1.13;
   font-weight: 700;
 }
 
-.name input:hover,
-.email input:hover {
+.field-input:hover {
   border-color: #cdd0d2;
 }
 
-.name input:focus,
-.email input:focus {
+.field-input:focus {
   border-color: #000000;
 }
 
 .button-send {
-  line-height: 18px;
+  line-height: 1.13;
   font-weight: 500;
   color: #ffffff;
   text-transform: uppercase;
@@ -214,17 +210,17 @@ a {
 
 .socials b {
   font-size: 36px;
-  line-height: 36px;
+  line-height: 1;
   font-weight: 700;
 }
 
 .socials p {
-  line-height: 22px;
+  line-height: 1.38;
 }
 
 .store h1 {
   font-size: 55px;
-  line-height: 55px;
+  line-height: 1;
   font-weight: 500;
   color: #000000;
   background-color: #eeeeee;
@@ -232,7 +228,7 @@ a {
 
 .name-list {
   font-size: 18px;
-  line-height: 30px;
+  line-height: 1.67;
   font-weight: 700;
   color: #000000;
   text-transform: uppercase;
@@ -240,7 +236,7 @@ a {
 
 .radio-name,
 .checkbox-button {
-  line-height: 20px;
+  line-height: 1.25;
 }
 
 .radio-button:hover,
@@ -251,7 +247,7 @@ a {
 }
 
 .button-filter {
-  line-height: 18px;
+  line-height: 1.13;
   font-weight: 500;
   color: #000000;
   background-color: #eeeeee;
@@ -266,7 +262,7 @@ a {
 
 .catalog h2 {
   font-size: 18px;
-  line-height: 18px;
+  line-height: 1;
   font-weight: 700;
   color: #000000;
   text-transform: uppercase;
@@ -274,7 +270,7 @@ a {
 
 .sort a {
   font-size: 14px;
-  line-height: 18px;
+  line-height: 1.29;
   color: #c2c2c2;
   text-transform: uppercase;
 }
@@ -289,19 +285,19 @@ a {
 
 .service-item {
   font-size: 18px;
-  line-height: 30px;
+  line-height: 1.67;
   font-weight: 700;
   color: #000000;
   text-transform: uppercase;
 }
 
 .service-list p {
-  line-height: 18px;
+  line-height: 1.13;
   color: #666666;
 }
 
 .service-button {
-  line-height: 18px;
+  line-height: 1.13;
   font-weight: 500;
   color: #ffffff;
   text-transform: uppercase;
@@ -309,7 +305,7 @@ a {
 }
 
 .pagination a {
-  line-height: 18px;
+  line-height: 1.13;
   font-weight: 500;
   color: #000000;
   text-transform: uppercase;
