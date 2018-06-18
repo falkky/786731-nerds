@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-size: 16px;
-  line-height: 1.50;
+  line-height: 1.5;
   font-family: "Roboto", Arial, sans-serif;
   color: #283136;
 }
@@ -10,7 +10,13 @@ body {
 a {
   text-decoration: none;
 }
-
+.container {
+  width: 1160px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  outline: 2px solid red;
+}
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -46,11 +52,6 @@ a {
 .main-navigation {
   display: flex;
   align-items: center;
-  width: 1160px;
-  margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
-  outline: 2px solid red;
 }
 
 .menu-navigation {
@@ -77,11 +78,6 @@ a {
 .features-list {
   display: flex;
   flex-direction: column;
-  width: 1160px;
-  margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
-  outline: 2px solid red;
 }
 
 .features-list h2 {
@@ -131,11 +127,6 @@ a {
 .products-list {
   display: flex;
   justify-content: space-between;
-  width: 1160px;
-  margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
-  outline: 2px solid red;
 }
 
 .products-list h3 {
@@ -211,10 +202,6 @@ a {
 
 .info-wrapper {
   display: flex;
-  width: 1160px;
-  margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
 }
 
 .info b,
@@ -247,12 +234,6 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 1160px;
-  margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
-  outline: 2px solid red;
-
 }
 
 .contacts {
@@ -297,12 +278,6 @@ a {
 
 .socials {
   display: flex;
-  width: 1160px;
-  margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
-  outline: 2px solid red;
-
 }
 
 .socials-wrapper {
@@ -331,11 +306,6 @@ a {
 .catalog-wrapper {
   display: flex;
   flex-wrap: wrap;
-  width: 1160px;
-  margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
-  outline: 2px solid red;
 }
 
 .name-list {
@@ -418,7 +388,6 @@ a {
 .service-list {
   display: flex;
   flex-wrap: wrap;
-  /*justify-content:space-between;*/
 }
 
 .service-item {
@@ -454,36 +423,26 @@ a {
 .pagination-list {
   display: flex;
   align-items: center;
-  margin-left: 400px;
-}
-
-.pagination-list li:first-child {
-  line-height: 1.13;
-  font-weight: 500;
-  color: #000000;
-  text-transform: uppercase;
-  background-color: #ffffff;
-  outline: 3px solid #eeeeee;
-  outline-offset: -3px;
-  padding: 15px 20px;
-}
-
-.pagination li:not(:first-child) {
-  line-height: 1.13;
-  font-weight: 500;
-  color: #000000;
-  text-transform: uppercase;
-  background-color: #eeeeee;
-  padding: 15px 20px;
 }
 
 .pagination li {
+  line-height: 1.13;
+  font-weight: 500;
   margin-right: 10px;
+  color: #000000;
+  padding: 15px 20px;
+  background-color: #eeeeee;
+}
+
+.pagination-list li:first-child {
+  background-color: #ffffff;
+  box-shadow: inset 3px 3px #eeeeee, inset -3px -3px #eeeeee;
 }
 
 .pagination li:last-child {
   padding: 15px 80px;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .pagination a:hover {
