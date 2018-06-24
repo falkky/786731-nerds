@@ -34,33 +34,62 @@
             <form action="https://echo.htmlacademy.ru" method="get">
               <fieldset class="filter-list">
                 <legend class="name-list">Стоимость:</legend>
-                <input type="range" name="price" min="0" max="15000">
-                <span>от</span>
-                <output class="output-min" name="price-min">0</output>
-                <span>до</span>
-                <output class="output-max" name="price-max">15000</output>
+                <!-- Скопипастил -_- -->
+                <div class="range-filter">
+                  <div class="range-controls">
+                    <div class="scale">
+                      <div class="bar"></div>
+                    </div>
+                    <div class="toggle toggle-min"></div>
+                    <div class="toggle toggle-max"></div>
+                  </div>
+                  <div class="price-controls">
+                    <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+                    <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+                  </div>
+                </div>
               </fieldset>
               <fieldset class="filter-list">
                 <legend class="name-list">Сетка:</legend>
-                <input type="radio" class="radio-button" name="layout" id="radio-adaptive" checked value="adaptive">
-                <label for="radio-adaptive" class="radio-name">Адаптивная</label>
-                <input type="radio" class="radio-button" name="layout" id="radio-fixed" value="fixed">
-                <label for="radio-fixed" class="radio-name">Фиксированная</label>
-                <input type="radio" class="radio-button" name="layout" id="radio-fluid-layout" value="fluid">
-                <label for="radio-fluid-layout" class="radio-name">Резиновая</label>
+                <ul class="reset-list">
+                  <li>
+                    <input type="radio" class="radio-button visually-hidden" name="layout" id="radio-adaptive" checked value="adaptive">
+                    <label for="radio-adaptive" class="radio-name">Адаптивная</label>
+                  </li>
+                  <li>
+                    <input type="radio" class="radio-button visually-hidden" name="layout" id="radio-fixed" value="fixed">
+                    <label for="radio-fixed" class="radio-name">Фиксированная</label>
+                  </li>
+                  <li>
+                    <input type="radio" class="radio-button visually-hidden" name="layout" id="radio-fluid-layout" value="fluid">
+                    <label for="radio-fluid-layout" class="radio-name">Резиновая</label>
+                  </li>
+                </ul>
               </fieldset>
               <fieldset class="filter-list">
                 <legend class="name-list">Особенности:</legend>
-                <input type="checkbox" class="checkbox-button" name="slider" id="checkbox-slider" checked>
-                <label for="checkbox-slider" class="checkbox-name">Слайдер</label>
-                <input type="checkbox" class="checkbox-button" name="features" id="checkbox-features">
-                <label for="checkbox-features" class="checkbox-name">Блок преимуществ</label>
-                <input type="checkbox" class="checkbox-button" name="news" id="checkbox-news" checked>
-                <label for="checkbox-news" class="checkbox-name">Новости</label>
-                <input type="checkbox" class="checkbox-button" name="gallery" id="checkbox-gallery">
-                <label for="checkbox-gallery" class="checkbox-name">Галерея</label>
-                <input type="checkbox" class="checkbox-button" name="cart" id="checkbox-cart">
-                <label for="checkbox-cart" class="checkbox-name">Корзина</label>
+                <ul class="reset-list">
+                  <li>
+                    <input type="checkbox" class="checkbox-button visually-hidden" name="slider" id="checkbox-slider" checked>
+                    <label for="checkbox-slider" class="checkbox-name">Слайдер</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" class="checkbox-button visually-hidden" name="features" id="checkbox-features">
+                    <label for="checkbox-features" class="checkbox-name">Блок преимуществ</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" class="checkbox-button visually-hidden" name="news" id="checkbox-news" checked>
+                    <label for="checkbox-news" class="checkbox-name">Новости</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" class="checkbox-button visually-hidden" name="gallery" id="checkbox-gallery">
+                    <label for="checkbox-gallery" class="checkbox-name">Галерея</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" class="checkbox-button visually-hidden" name="cart" id="checkbox-cart">
+                    <label for="checkbox-cart" class="checkbox-name">Корзина</label>
+                  </li>
+                </ul>
               </fieldset>
               <button type="submit" class="button-filter">показать</button>
             </form>
@@ -72,8 +101,8 @@
               <li class="sort"><a href="#">по цене</a></li>
               <li class="sort"><a href="#">по типу</a></li>
               <li class="sort"><a href="#">по названию</a></li>
-              <li class="sort"><a href="#">По возрастанию</a></li>
-              <li class="sort"><a href="#">По убыванию</a></li>
+              <li class="sort"><a class="visually-hidden" href="#">По возрастанию</a></li>
+              <li class="sort"><a class="visually-hidden" href="#">По убыванию</a></li>
             </ul>
             </div>
             <div class="service">
@@ -188,7 +217,7 @@
         </div>
         <div class="text">
           <label class="name-field" for="text-field">Текст письма:</label>
-          <textarea class="field-field" name="text" id="text-field" placeholder="В свободной форме"></textarea>
+          <textarea class="field-input" name="text" id="text-field" placeholder="В свободной форме"></textarea>
         </div>
         <button type="submit" class="button-send">отправить</button>
         <button type="button" class="modal-close"><span class="visually-hidden">Закрыть</span></button>
