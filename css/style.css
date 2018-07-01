@@ -1037,6 +1037,18 @@ a {
   background-color: #eeeeee;
   padding-top: 30px;
   padding-bottom: 43px;
+  box-sizing: border-box;
+}
+
+.service-wrapper p {
+  padding-left: 65px;
+  padding-right: 65px;
+}
+.service-item:nth-child(1) p,
+.service-item:nth-child(3) p,
+.service-item:nth-child(4) p {
+  padding-left: 85px;
+  padding-right: 85px;
 }
 
 .service-item:hover .service-wrapper {
@@ -1083,20 +1095,34 @@ a {
 }
 
 .modal-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+}
+
+.modal-wrapper {
+  display: none;
+  position: absolute;
+  box-sizing: border-box;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-right: auto;
+  margin-left: auto;
   width: 960px;
-  margin: 0 auto;
+  max-width: 100%;
+  background-color: #ffffff;
+  padding: 70px 100px 80px 100px;
+  box-shadow: 0 10px 50px 1px #000000;
+  overflow-x: auto;
 }
 
 .modal-window {
-  display: none;
-  position: fixed;
-  top: 155px;
-  background-color: #ffffff;
-  padding-top: 70px;
-  padding-right: 100px;
-  padding-bottom: 80px;
-  padding-left: 100px;
-  box-shadow: 0 10px 50px 1px #000000;
+  min-width: 760px;
+  display: inline-block;
 }
 
 .modal-title {
@@ -1107,7 +1133,7 @@ a {
 .name {
   display: inline-block;
   width: 360px;
-  margin-right: 37px;
+  margin-right: 35px;
 }
 
 .name-field {
@@ -1121,6 +1147,7 @@ a {
   width: 360px;
   height: 50px;
   padding-left: 15px;
+  padding-right: 15px;
   border: 2px solid #d7dcde;
 }
 
@@ -1131,18 +1158,16 @@ a {
   padding-left: 15px;
   padding-top: 15px;
   border: 2px solid #d7dcde;
+  resize: vertical;
 }
 
-.name .field-input:hover,
-.email .field-input:hover,
-.text .field-input:hover {
+.field-input:hover {
   border: 2px solid #b4b9bb;
 }
 
-.name .field-input:focus,
-.email .field-input:focus,
-.text .field-input:focus {
+.field-input:focus {
   border: 2px solid #000000;
+  outline: 0;
 }
 
 .email {
@@ -1184,18 +1209,18 @@ a {
   cursor: pointer;
   border: 0;
   background-color: #ffffff;
+  opacity: 0.3;
 }
 
 .modal-close::before,
 .modal-close::after {
   content: "";
   position: absolute;
-  top: 8px;
-  right: -2px;
+  top: 9px;
+  right: 0;
   width: 25px;
   height: 3px;
   background-color: #fb565a;
-  opacity: 0.3;
 }
 
 .modal-close::before {
@@ -1206,12 +1231,10 @@ a {
   transform: rotate(-45deg);
 }
 
-.modal-close:hover::before,
-.modal-close:hover::after {
+.modal-close:hover {
   opacity: 1;
 }
 
-.modal-close:active::before,
-.modal-close:active::after {
+.modal-close:active {
   opacity: 0.1;
 }
