@@ -178,23 +178,25 @@
       </div>
     </footer>
     <div class="modal-container">
-      <form class="modal-window" action="https://echo.htmlacademy.ru" method="post">
-        <h2 class="modal-title">Напишите нам</h2>
-        <div class="name">
-          <label class="name-field" for="name-field">Ваше имя:</label>
-          <input type="text" class="field-input" name="name" id="name-field" placeholder="Имя Фамилия">
-        </div>
-        <div class="email">
-          <label class="name-field" for="email-field">Ваш e-mail:</label>
-          <input type="email" class="field-input" name="email" id="email-field" placeholder="email@example.com">
-        </div>
-        <div class="text">
-          <label class="name-field" for="text-field">Текст письма:</label>
-          <textarea class="field-input" name="text" id="text-field" placeholder="В свободной форме"></textarea>
-        </div>
-        <button type="submit" class="button-send">отправить</button>
-        <button type="button" class="modal-close"><span class="visually-hidden">Закрыть</span></button>
-      </form>
+      <div class="modal-wrapper">
+        <form class="modal-window" action="https://echo.htmlacademy.ru" method="post">
+          <h2 class="modal-title">Напишите нам</h2>
+          <div class="name">
+            <label class="name-field" for="name-field">Ваше имя:</label>
+            <input type="text" class="field-input" name="name" id="name-field" placeholder="Имя Фамилия">
+          </div>
+          <div class="email">
+            <label class="name-field" for="email-field">Ваш e-mail:</label>
+            <input type="email" class="field-input" name="email" id="email-field" placeholder="email@example.com">
+          </div>
+          <div class="text">
+            <label class="name-field" for="text-field">Текст письма:</label>
+            <textarea class="field-input" name="text" id="text-field" placeholder="В свободной форме"></textarea>
+          </div>
+          <button type="submit" class="button-send">отправить</button>
+          <button type="button" class="modal-close"><span class="visually-hidden">Закрыть</span></button>
+        </form>
+      </div>
     </div>
   </body>
 </html>
