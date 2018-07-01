@@ -1095,6 +1095,7 @@ a {
 }
 
 .modal-container {
+  display: none;
   position: fixed;
   top: 0;
   right: 0;
@@ -1104,7 +1105,6 @@ a {
 }
 
 .modal-wrapper {
-  display: none;
   position: absolute;
   box-sizing: border-box;
   top: 50%;
