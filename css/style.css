@@ -1,11 +1,11 @@
 body {
   margin: 0;
   padding: 0;
+  min-width: 1200px;
   font-size: 16px;
   line-height: 1.5;
   font-family: "Roboto", Arial, sans-serif;
   color: #283136;
-  min-width: 1200px;
 }
 
 a {
@@ -25,8 +25,8 @@ a {
   width: 1px;
   height: 1px;
   margin: -1px;
-  border: 0;
   padding: 0;
+  border: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
@@ -54,24 +54,24 @@ a {
 }
 
 .cart-navigation {
-    position: relative;
+  position: relative;
 }
 
 .cart-navigation::before {
   content: "";
-  background-image: url("../img/cart-icon.svg");
-  background-repeat: no-repeat;
-  height: 15px;
-  width: 15px;
   position: absolute;
   left: -40px;
   bottom: 21px;
+  height: 15px;
+  width: 15px;
+  background-image: url("../img/cart-icon.svg");
+  background-repeat: no-repeat;
 }
 
 .menu-navigation {
-  width: 440px;
   display: flex;
   justify-content: space-between;
+  width: 440px;
   padding-top: 75px;
   padding-bottom: 12px;
   margin-right: 283px;
@@ -109,7 +109,6 @@ a {
   position: absolute;
   left: 50%;
   bottom: 104px;
-  /* z-index: 100; */
   width: 160px;
   height: 18px;
   text-align: center;
@@ -165,12 +164,12 @@ a {
 }
 
 .feature .title {
+  margin: 0;
+  margin-bottom: 25px;
   font-size: 55px;
   line-height: 1;
   font-weight: 500;
   color: #000000;
-  margin: 0;
-  margin-bottom: 25px;
 }
 
 .feature:first-child .title {
@@ -222,25 +221,25 @@ a {
 }
 
 .feature:first-child {
+  flex-basis: 413px;
   background-image: url("../img/slide1.png");
   background-repeat: no-repeat;
   background-position: 93% 15px;
-  flex-basis: 413px;
 
 }
 
 .feature:nth-child(2) {
+  flex-basis: 413px;
   background-image: url("../img/slide2.png");
   background-repeat: no-repeat;
   background-position: 93% 15px;
-  flex-basis: 413px;
 }
 
 .feature:last-child {
+  flex-basis: 413px;
   background-image: url("../img/slide3.png");
   background-repeat: no-repeat;
   background-position: 93% 15px;
-  flex-basis: 413px;
 }
 
 .products {
@@ -254,20 +253,20 @@ a {
 }
 
 .products-list h3 {
+  padding-top: 172px;
+  margin: 0;
+  margin-bottom: 20px;
   font-size: 24px;
   line-height: 1.25;
   font-weight: 700;
   color: #000000;
   text-transform: uppercase;
-  padding-top: 172px;
-  margin: 0;
-  margin-bottom: 20px;
 }
 
 .products-list p {
+  width: 244px;
   margin: 0;
   margin-bottom: 31px;
-  width: 244px;
 }
 
 .products-list .button {
@@ -282,23 +281,22 @@ a {
 }
 
 .product-web {
+  width: 300px;
   background-image: url("../img/illustration-1.jpg");
   background-repeat: no-repeat;
-  width: 300px;
-
 }
 
 .product-apps {
+  width: 300px;
   background-image: url("../img/illustration-2.jpg");
   background-repeat: no-repeat;
-  width: 300px;
 }
 
 .product-presentation {
-  background-image: url("../img/illustration-3.jpg");
-  background-repeat: no-repeat;
   width: 300px;
   margin-right: 60px;
+  background-image: url("../img/illustration-3.jpg");
+  background-repeat: no-repeat;
 }
 
 .web {
@@ -341,12 +339,12 @@ a {
 }
 
 .info-wrapper {
+  position: relative;
   display: flex;
   padding-top: 74px;
   padding-bottom: 47px;
   border-top: 2px solid #eeeeee;
   border-bottom: 2px solid #eeeeee;
-  position: relative;
 }
 
 .info {
@@ -374,27 +372,27 @@ a {
 }
 
 .info p:last-of-type {
+  margin: 0;
+  margin-bottom: 25px;
   font-weight: 700;
   color: #000000;
   text-transform: uppercase;
-  margin: 0;
-  margin-bottom: 25px;
 }
 
 .info-list li {
-  padding-bottom: 25px;
   position: relative;
+  padding-bottom: 25px;
   margin-left: 37px;
 }
 
 .info-list li::before {
   content: "";
-  height: 2px;
-  width: 25px;
-  background-color: #fb565a;
   position: absolute;
   top: 10px;
   left: -35px;
+  height: 2px;
+  width: 25px;
+  background-color: #fb565a;
 }
 
 .aside-statistics {
@@ -408,16 +406,16 @@ a {
   position: absolute;
   top: 250px;
   right: 0;
-  table-layout: fixed;
   width: 360px;
+  table-layout: fixed;
 }
 
 .statistics caption {
+  margin-top: 34px;
+  margin-bottom: 37px;
   font-weight: 700;
   color: #000000;
   text-transform: uppercase;
-  margin-top: 34px;
-  margin-bottom: 37px;
 }
 
 .statistics tr:first-of-type {
@@ -432,8 +430,8 @@ a {
 }
 
 .statistics td {
-  vertical-align: middle;
   height: 40px;
+  vertical-align: middle;
 
 }
 
@@ -457,11 +455,43 @@ a {
   padding-top: 45px;
   border-bottom: 2px solid #eeeeee;
   padding-bottom: 38px;
+  margin-bottom: 78px;
 }
 
 .partners-logo {
+  position: relative;
   display: flex;
   align-items: center;
+}
+
+.partners-logo li:nth-child(2)::after {
+  content: "";
+  position: absolute;
+  top: 18px;
+  left: 278px;
+  height: 52px;
+  width: 2px;
+  background-color: #eeeeee;
+}
+
+.partners-logo li:nth-child(3)::after {
+  content: "";
+  position: absolute;
+  top: 18px;
+  left: 578px;
+  height: 52px;
+  width: 2px;
+  background-color: #eeeeee;
+}
+
+.partners-logo li:nth-child(4)::after {
+  content: "";
+  position: absolute;
+  top: 18px;
+  left: 878px;
+  height: 52px;
+  width: 2px;
+  background-color: #eeeeee;
 }
 
 .partners-logo li:first-child {
@@ -497,11 +527,12 @@ a {
 
 .contacts {
   position: relative;
+  margin-bottom: 65px;
   min-height: 416px;
   background-color: #e9e5dc;
-  margin-bottom: 65px;
   overflow: hidden;
 }
+
 .contacts img {
   position: absolute;
   left: 0;
@@ -518,26 +549,26 @@ a {
   left: calc(50% - 580px);
   padding: 45px;
   min-height: 210px;
-  background-color: #fff;
   width: 230px;
+  background-color: #fff;
 }
 
 .contact-us h3 {
+  margin: 0;
+  margin-bottom: 20px;
   font-size: 18px;
   line-height: 1.67;
   color: #000000;
   font-weight: 700;
   text-transform: uppercase;
-  margin: 0;
-  margin-bottom: 20px;
 }
 
 .contact-us p:first-of-type {
-  line-height: 1.13;
-  display: inline-block;
   width: 210px;
   margin: 0;
   margin-bottom: 19px;
+  line-height: 1.13;
+  display: inline-block;
 }
 
 .contact-us p:last-of-type {
@@ -547,15 +578,24 @@ a {
 
 .button-write-us {
   display: block;
+  width: 220px;
+  padding: 17px 0;
   line-height: 1.13;
   font-weight: 500;
   color: #ffffff;
   text-align: center;
   text-transform: uppercase;
   background-color: #fb565a;
-  width: 220px;
-  padding: 17px 0;
   border-radius: 4px;
+}
+
+.button-write-us:hover {
+  background-color: #e74246;
+}
+
+.button-write-us:active {
+  background-color: #d7373b;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .name-field {
@@ -587,6 +627,7 @@ a {
   display: flex;
   justify-content: space-between;
   width: 260px;
+  padding-top: 5px;
 }
 
 .social-button {
@@ -617,11 +658,11 @@ a {
 
 .socials-wrapper b {
   display: block;
+  padding-top: 12px;
+  padding-bottom: 10px;
   font-size: 36px;
   line-height: 1;
   font-weight: 700;
-  padding-top: 12px;
-  padding-bottom: 10px;
 }
 
 .socials-wrapper p {
@@ -630,15 +671,15 @@ a {
 }
 
 .store h1 {
+  margin: 0;
+  padding-top: 75px;
+  padding-bottom: 107px;
   font-size: 55px;
   line-height: 1;
   font-weight: 500;
   color: #000000;
   background-color: #eeeeee;
   text-align: center;
-  margin: 0;
-  padding-top: 75px;
-  padding-bottom: 107px;
 }
 
 .catalog-wrapper {
@@ -753,12 +794,12 @@ a {
 }
 
 .name-list {
+  margin-bottom: 15px;
   font-size: 18px;
   line-height: 1.67;
   font-weight: 700;
   color: #000000;
   text-transform: uppercase;
-  margin-bottom: 15px;
 }
 
 .filter-list:first-child .name-list {
@@ -773,11 +814,11 @@ a {
   position: relative;
   height: 41px;
   margin-bottom: 15px;
-  background-color: #f1f1f1;
-  padding-top: 39px;
-  border-radius: 5px;
   padding-right: 20px;
   padding-left: 20px;
+  padding-top: 39px;
+  background-color: #f1f1f1;
+  border-radius: 5px;
 }
 
 .range-controls .scale {
@@ -844,13 +885,13 @@ a {
 }
 
 .button-filter {
+  width: 100%;
+  height: 50px;
   line-height: 1.13;
   font-weight: 500;
   color: #000000;
   text-transform: uppercase;
   background-color: #eeeeee;
-  width: 100%;
-  height: 50px;
   border: 0;
   cursor: pointer;
 }
@@ -874,12 +915,12 @@ a {
 }
 
 .catalog h2 {
+  margin: 0;
   font-size: 18px;
   line-height: 1;
   font-weight: 700;
   color: #000000;
   text-transform: uppercase;
-  margin: 0;
 }
 
 .sort a {
@@ -903,6 +944,7 @@ a {
 
 .head-wrapper {
   display: flex;
+  margin-bottom: 53px;
 }
 
 .head-wrapper h2{
@@ -962,10 +1004,6 @@ a {
   opacity: 1;
 }
 
-.service {
-  margin-top: 90px;
-}
-
 .service-list {
   display: flex;
   flex-wrap: wrap;
@@ -974,7 +1012,16 @@ a {
 .service-item {
   position: relative;
   width: 360px;
-  margin-bottom: 70px;
+  margin-bottom: 35px;
+  padding-top: 39px;
+}
+
+.service-item img{
+  display: block;
+}
+
+.service-item:hover {
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.25);
 }
 
 .service-item:nth-child(2n-1) {
@@ -983,13 +1030,13 @@ a {
 
 .service-item:last-child,
 .service-item:nth-last-child(2) {
-  margin-bottom: 50px;
+  margin-bottom: 61px;
 }
 
 .service-item>a::before {
   content: "";
   position: absolute;
-  top: -39px;
+  top: 0px;
   width: 100%;
   height: 40px;
   background-image: url("../img/browser.svg");
@@ -1015,40 +1062,40 @@ a {
 }
 
 .service p {
-  line-height: 1.13;
-  color: #666666;
   margin: 0;
   margin-bottom: 30px;
+  line-height: 1.13;
+  color: #666666;
 }
 
 .service-button {
   display: inline-block;
+  width: 200px;
+  padding: 15px 0;
   line-height: 1.13;
   font-weight: 500;
   color: #ffffff;
   text-transform: uppercase;
   background-color: #fb565a;
-  width: 200px;
-  padding: 15px 0;
-
 }
 
 .service-wrapper {
-  display: none;
   position: absolute;
-  bottom: 5px;
+  bottom: 0px;
+  display: none;
+  box-sizing: border-box;
   width: 100%;
+  padding-top: 28px;
+  padding-bottom: 43px;
   text-align: center;
   background-color: #eeeeee;
-  padding-top: 30px;
-  padding-bottom: 43px;
-  box-sizing: border-box;
 }
 
 .service-wrapper p {
   padding-left: 65px;
   padding-right: 65px;
 }
+
 .service-item:nth-child(1) p,
 .service-item:nth-child(3) p,
 .service-item:nth-child(4) p {
@@ -1071,11 +1118,11 @@ a {
 
 .pagination-item a {
   display: block;
+  padding: 15px 20px;
   line-height: 1.13;
   font-weight: 500;
   margin-right: 10px;
   color: #000000;
-  padding: 15px 20px;
   background-color: #eeeeee;
 }
 
@@ -1100,35 +1147,34 @@ a {
 }
 
 .modal-container {
-  display: none;
   position: fixed;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-
+  display: none;
 }
 
 .modal-wrapper {
   position: absolute;
-  box-sizing: border-box;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  padding: 70px 100px 80px 100px;
   margin-right: auto;
   margin-left: auto;
   width: 960px;
   max-width: 100%;
   background-color: #ffffff;
-  padding: 70px 100px 80px 100px;
   box-shadow: 0 10px 50px 1px #000000;
   overflow-x: auto;
+  transform: translate(-50%, -50%);
 }
 
 .modal-window {
   position: relative;
-  min-width: 760px;
   display: inline-block;
+  min-width: 760px;
 }
 
 .modal-title {
