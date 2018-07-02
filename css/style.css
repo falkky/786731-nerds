@@ -77,6 +77,11 @@ a {
   margin-right: 283px;
 }
 
+.menu-navigation .current {
+  padding-bottom: 9px;
+  border-bottom: 2px solid #fb565a;
+}
+
 .main-navigation {
   display: flex;
   align-items: center;
@@ -1121,6 +1126,7 @@ a {
 }
 
 .modal-window {
+  position: relative;
   min-width: 760px;
   display: inline-block;
 }
@@ -1202,8 +1208,8 @@ a {
 
 .modal-close {
   position: absolute;
-  top: 80px;
-  right: 90px;
+  top: 15px;
+  right: -10px;
   width: 20px;
   height: 20px;
   cursor: pointer;
