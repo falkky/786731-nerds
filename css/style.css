@@ -942,13 +942,13 @@ a {
 
 .head-wrapper {
   display: flex;
-  justify-content: space-between;
   margin-bottom: 53px;
 }
 
 .sort-list {
   display: flex;
   width: 360px;
+  margin-left: auto;
 }
 
 .sort-list li {
@@ -958,10 +958,14 @@ a {
   padding-right: 25px;
 }
 
+.sort-list li:nth-child(3) {
+  padding-right: 0;
+}
 
 .sort-list li:nth-child(5),
 .sort-list li:nth-child(4) {
   padding-right: 0;
+  margin-left:auto;
 }
 
 .down-dir {
@@ -977,7 +981,7 @@ a {
   display: block;
   position: absolute;
   top: 7px;
-  right: -61px;
+  right: 2px;
   width: 10px;
   height: 10px;
   background-image: url("../img/icon-up-dir.svg");
@@ -988,7 +992,7 @@ a {
   display: block;
   position: absolute;
   top: 7px;
-  right: -33px;
+  right: -13px;
   width: 10px;
   height: 10px;
   background-image: url("../img/icon-down-dir.svg");
