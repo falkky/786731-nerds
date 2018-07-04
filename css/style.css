@@ -1,3 +1,27 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/roboto-bold.woff2") format("woff2"),
+       url("../fonts/roboto-bold.woff") format("woff");
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/roboto-medium.woff2") format("woff2"),
+       url("../fonts/roboto-medium.woff") format("woff");
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/roboto-regular.woff2") format("woff2"),
+       url("../fonts/roboto-regular.woff") format("woff");
+  font-style: normal;
+  font-weight: 400;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -48,6 +72,14 @@ a {
   padding-top: 49px;
 }
 
+.header-logo[href]:hover {
+  opacity: 0.8;
+}
+
+.header-logo[href]:active {
+  opacity: 0.3;
+}
+
 .cart-navigation{
   padding-top: 74px;
   padding-bottom: 13px;
@@ -87,16 +119,16 @@ a {
   align-items: center;
   line-height: 1.88;
   font-weight: 500;
-  color: #191919;
+  color: #000000;
   text-transform: uppercase;
 }
 
 .main-navigation a[href]:hover {
-  color: #fa6669;
+  color: #fb565a;
 }
 
 .main-navigation a[href]:active {
-  color: #b9b9b9;
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .features {
@@ -195,6 +227,7 @@ a {
 }
 
 .feature p {
+  width: 420px;
   margin: 0;
   margin-bottom: 38px;
 }
@@ -209,6 +242,7 @@ a {
   background-color: #fb565a;
   border-radius: 4px;
   text-transform: uppercase;
+  font-weight: 500;
 }
 
 .features-list .button:hover {
@@ -218,6 +252,7 @@ a {
 .features-list .button:active {
   background-color: #d7373b;
   color: rgba(255, 255, 255, 0.3);
+  box-shadow: inset 0 3px rgba(0, 1, 1, 0.1)
 }
 
 .feature:first-child {
@@ -264,7 +299,7 @@ a {
 }
 
 .products-list p {
-  width: 244px;
+  width: 260px;
   margin: 0;
   margin-bottom: 31px;
 }
@@ -318,6 +353,7 @@ a {
 .product-web a:active {
   background-color: #d7373b;
   color: rgba(255, 255, 255, 0.3);
+  box-shadow: inset 0 3px rgba(0, 1, 1, 0.1)
 }
 
 .product-apps a:hover {
@@ -327,6 +363,7 @@ a {
 .product-apps a:active {
   background-color: #00aa62;
   color: rgba(255, 255, 255, 0.3);
+  box-shadow: inset 0 3px rgba(0, 1, 1, 0.1)
 }
 
 .product-presentation a:hover {
@@ -336,6 +373,7 @@ a {
 .product-presentation a:active {
   background-color: #e5a722;
   color: rgba(255, 255, 255, 0.3);
+  box-shadow: inset 0 3px rgba(0, 1, 1, 0.1)
 }
 
 .info-wrapper {
@@ -458,6 +496,7 @@ a {
 .partners-logo {
   position: relative;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
 }
 
@@ -518,7 +557,6 @@ a {
 }
 
 .main-footer {
-
   padding-bottom: 70px;
 }
 
@@ -542,9 +580,9 @@ a {
 
 .contact-us {
   position: absolute;
-  top: 60px;
+  top: 58px;
   left: calc(50% - 580px);
-  padding: 45px;
+  padding: 46px 42px 45px 49px;
   min-height: 210px;
   width: 230px;
   background-color: #fff;
@@ -552,7 +590,7 @@ a {
 
 .contact-us h3 {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
   font-size: 18px;
   line-height: 1.67;
   color: #000000;
@@ -561,16 +599,18 @@ a {
 }
 
 .contact-us p:first-of-type {
+  display: inline-block;
   width: 210px;
   margin: 0;
-  margin-bottom: 19px;
+  margin-bottom: 16px;
   line-height: 1.13;
-  display: inline-block;
+  color: #666666;
 }
 
 .contact-us p:last-of-type {
   margin: 0;
-  margin-bottom: 35px;
+  margin-bottom: 32px;
+  color: #666666;
 }
 
 .button-write-us {
@@ -593,6 +633,7 @@ a {
 .button-write-us:active {
   background-color: #d7373b;
   color: rgba(255, 255, 255, 0.3);
+  box-shadow: inset 0 3px rgba(0, 1, 1, 0.1)
 }
 
 .name-field {
@@ -643,10 +684,12 @@ a {
 
 .social-button:active {
   background-color: #d7373b;
+  box-shadow: inset 0 3px rgba(0, 1, 1, 0.1)
 }
 
 .social-button:active path {
   opacity: 0.3;
+
 }
 
 .socials-wrapper {
@@ -663,8 +706,9 @@ a {
 }
 
 .socials-wrapper p {
-  line-height: 1.38;
   margin: 0;
+  line-height: 1.38;
+  color: #444444;
 }
 
 .store h1 {
@@ -694,7 +738,7 @@ a {
 }
 
 .filter-list:first-of-type {
-  margin-bottom: 55px;
+  margin-bottom: 53px;
 }
 
 .filter-list li {
@@ -804,7 +848,7 @@ a {
 }
 
 .filter-list:nth-child(2) {
-  margin-bottom: 33px;
+  margin-bottom: 30px;
 }
 
 .range-controls {
@@ -863,17 +907,23 @@ a {
 }
 
 .price-controls input {
-  text-align: center;
   width: 60px;
   padding: 8px 10px;
   margin-left: 10px;
+  text-align: center;
+  line-height: 22px;
   border: none;
   border-radius: 5px;
   background: #f1f1f1;
 }
 
+.min-price {
+  line-height: 22px;
+}
+
 .max-price {
   text-align: right;
+  line-height: 22px;
 }
 
 .radio-name,
@@ -924,7 +974,7 @@ a {
 .sort a {
   font-size: 14px;
   line-height: 1.29;
-  color: #c2c2c2;
+  color: rgba(0, 0, 0, 0.3);
   text-transform: uppercase;
 }
 
@@ -933,11 +983,11 @@ a {
 }
 
 .sort a:hover {
-  opacity: 0.6;
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .sort a:active {
-  opacity: 1;
+  color: rgba(0, 0, 0, 1);
 }
 
 .head-wrapper {
@@ -1136,7 +1186,7 @@ a {
   padding: 15px 20px;
   line-height: 1.13;
   font-weight: 500;
-  margin-right: 10px;
+  margin-right: 11px;
   color: #000000;
   background-color: #eeeeee;
   border-radius: 4px;
